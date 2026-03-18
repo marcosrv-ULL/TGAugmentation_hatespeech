@@ -1,0 +1,5 @@
+model,val_f1_macro_mean,val_f1_macro_std,val_accuracy_mean,val_accuracy_std,test_f1_macro_mean,test_f1_macro_std,test_accuracy_mean,test_accuracy_std
+roberta-base_merged_masked_unionv2_text,0.8659,0.0104,0.8906,0.0080,0.8970,0.0171,0.8971,0.0172
+roberta-base_merged_masked_unionv2_text_masked,0.9129,0.0061,0.9287,0.0053,0.9113,0.0123,0.9114,0.0123
+roberta-base_merged_masked_unionv2_text_multi,0.6698,0.0526,0.8919,0.0234,0.7533,0.1274,0.8781,0.0093
+roberta-base_merged_masked_unionv2_text_masked_multi,0.7029,0.0323,0.8805,0.0171,0.7329,0.0690,0.9105,0.0129

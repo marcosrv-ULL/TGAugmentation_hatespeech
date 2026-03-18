@@ -1,0 +1,7 @@
+model,val_f1_macro_mean,val_f1_macro_std,val_accuracy_mean,val_accuracy_std,test_f1_macro_mean,test_f1_macro_std,test_accuracy_mean,test_accuracy_std
+roberta-base_seeds_per_class_text_masked,0.4545,0.1904,0.5400,0.1828,0.4511,0.1730,0.5962,0.1694
+roberta-base_seeds_plus_augmented_text_masked,0.9981,0.0038,0.9981,0.0038,0.6946,0.0287,0.8419,0.0166
+roberta-base_merged_masked_unionv2_text_masked,0.7039,0.0307,0.8812,0.0171,0.7308,0.0754,0.9105,0.0129
+roberta-base_balanced_with_broken_phone_supertweetevalv3_text_masked,0.9756,0.0080,0.9755,0.0080,0.7889,0.1037,0.8895,0.0097
+roberta-base_balanced_with_permutation_supertweetevalv3_text_masked,0.9556,0.0052,0.9556,0.0052,0.7876,0.0118,0.9010,0.0097
+roberta-base_balanced_with_broken_phone_supertweeteval_memory_remasked_text_masked,0.9781,0.0025,0.9778,0.0025,0.8457,0.0840,0.8686,0.0164
