@@ -1,0 +1,58 @@
+# if you use CUDA
+name: hs-env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  # PyTorch + CUDA
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.4
+  # NumPy stack
+  - numpy
+  - pandas
+  - scipy
+  # ML
+  - scikit-learn
+  - imbalanced-learn
+  # Visualización y util
+  - matplotlib
+  - seaborn
+  - tqdm
+  - rich
+  - joblib
+  - jupyterlab
+  - ipykernel
+  - cython
+  - pip:
+      - transformers>=4.40
+      - datasets
+      - accelerate
+      - evaluate
+      - sentencepiece
+      - sentence-transformers
+      - nltk
+      - spacy
+      - umap-learn
+      - hdbscan
+      - bertopic
+      - nlpaug
+      - textattack
+      - sacrebleu
+      - rouge-score
+      - bert-score
+      - qiskit
+      - qiskit-machine-learning
+      - black
+      - isort
+      - ruff
+      - pre-commit
+      - openpyxl
+      - python-dotenv
+      # LLMs grandes con cuantización
+      - bitsandbytes

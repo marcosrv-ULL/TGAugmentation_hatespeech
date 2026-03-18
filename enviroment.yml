@@ -1,0 +1,53 @@
+name: hs-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  # NumPy stack
+  - numpy
+  - pandas
+  - scipy
+  # ML
+  - scikit-learn
+  - imbalanced-learn
+  # Visualización
+  - matplotlib
+  - seaborn
+  # Utilidades
+  - tqdm
+  - rich
+  - joblib
+  - jupyterlab
+  - ipykernel
+  - cython
+  - pip:
+      # HuggingFace & NLP
+      - transformers>=4.40
+      - datasets
+      - accelerate
+      - evaluate
+      - sentencepiece
+      - sentence-transformers
+      - nltk
+      - spacy
+      # Tópicos / BERTopic
+      - umap-learn
+      - hdbscan
+      - bertopic
+      # Augmentation (elige según tu pipeline)
+      - nlpaug
+      - textattack
+      # Métricas de texto
+      - sacrebleu
+      - rouge-score
+      - bert-score
+      # Calidad de código
+      - black
+      - isort
+      - ruff
+      - pre-commit
+      # Extras
+      - openpyxl
+      - python-dotenv

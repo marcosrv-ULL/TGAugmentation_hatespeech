@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json merged_masked_unionv2_new/merged_masked_unionv2_new_train_bt.jsonl  --test_json merged_masked_unionv2_new/merged_masked_unionv2_new_test.jsonl --text_field text
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json merged_masked_unionv2_new/merged_masked_unionv2_new_train.jsonl  --test_json merged_masked_unionv2_new/merged_masked_unionv2_new_test.jsonl --text_field text
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json merged_masked_unionv2_new/merged_masked_unionv2_new_train.jsonl  --test_json merged_masked_unionv2_new/merged_masked_unionv2_new_test.jsonl --text_field text_masked
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json merged_masked_unionv2_new/merged_masked_unionv2_new_train_tga.jsonl  --test_json merged_masked_unionv2_new/merged_masked_unionv2_new_test.jsonl --text_field text_masked
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json merged_masked_unionv2_new/merged_masked_unionv2_new_train_tga_rag.jsonl  --test_json merged_masked_unionv2_new/merged_masked_unionv2_new_test.jsonl --text_field text_masked
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json en_dataset_with_stop_words_masked/en_dataset_with_stop_words_masked_train_low_regime_masked.csv  --test_json en_dataset_with_stop_words_masked/en_dataset_with_stop_words_masked_test.csv --text_field text_masked
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json en_dataset_with_stop_words_masked/en_dataset_with_stop_words_masked_train_low_regime_masked_bt.csv   --test_json en_dataset_with_stop_words_masked/en_dataset_with_stop_words_masked_test_masked.csv --text_field text_masked
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json en_dataset_with_stop_words_masked/en_dataset_with_stop_words_masked_train_low_regime_masked_augmented.jsonl   --test_json en_dataset_with_stop_words_masked/en_dataset_with_stop_words_masked_test_masked.csv --text_field text_masked
+
+
+#python backtranslate_dataset.py --input_path en_dataset_with_stop_words_masked/en_dataset_with_stop_words_masked_train_low_regime_masked.csv --output_path en_dataset_with_stop_words_masked/en_dataset_with_stop_words_masked_train_low_regime_masked_bt.csv   --text_field text   --lang_field lang   --lang_filter en   --batch_size 16
+#python backtranslate_dataset.py   --input_path merged_masked_unionv2_new/merged_masked_unionv2_new_train_low_regime.jsonl  --output_path merged_masked_unionv2_new/merged_masked_unionv2_new_train_low_regime_augmented_bt.jsonl   --text_field text   --lang_field lang   --lang_filter en   --batch_size 16 --bt_cycles 10
+#python backtranslate_dataset.py   --input_path en_dataset_with_stop_words_masked/en_dataset_with_stop_words_masked_train_low_regime_masked.csv --output_path en_dataset_with_stop_words_masked/en_dataset_with_stop_words_masked_train_low_regime_masked_bt.csv   --text_field text   --lang_field lang   --lang_filter en   --batch_size 16 --bt_cycles 10 
+
+
+### ETHOS
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json en_dataset_with_stop_words/en_dataset_with_stop_words_train.csv  --test_json en_dataset_with_stop_words/en_dataset_with_stop_words_test.csv --text_field text
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_train.jsonl  --test_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_test.jsonl --text_field text_masked
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_train_augmented_tgarag2.jsonl --test_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_test.jsonl --text_field text_masked
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_train_augmented_tgarag2_exploded.jsonl --test_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_test.jsonl --text_field text_masked
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_train_augmented_tgarag2_exploded.jsonl --test_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_test.jsonl --text_field text_masked
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_train_low_regime_augmented.jsonl --test_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_test.jsonl --text_field text_masked
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_train_low_regime_augmented.jsonl --test_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_test.jsonl --text_field text_masked
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_train_deepseek.jsonl --test_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_test.jsonl --text_field text_masked
+#python3 try_supertweeteval_allconfigsdatasets.py  --input_json merged_masked_unionv2_new/merged_masked_unionv2_new_train_bt.jsonl  --test_json merged_masked_unionv2_new/merged_masked_unionv2_new_test.jsonl --text_field text
+
+python3 try_supertweeteval_allconfigsdatasets.py  --input_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_train_low_regime.jsonl  --test_json en_dataset_with_stop_words/en_dataset_with_stop_words_masked_test.jsonl --text_field text_masked
