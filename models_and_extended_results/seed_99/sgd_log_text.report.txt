@@ -1,8 +1,0 @@
-              precision    recall  f1-score   support
-
-    non_hate     0.6972    0.9429    0.8016       105
-        hate     0.9118    0.5905    0.7168       105
-
-    accuracy                         0.7667       210
-   macro avg     0.8045    0.7667    0.7592       210
-weighted avg     0.8045    0.7667    0.7592       210
